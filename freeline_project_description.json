@@ -1,0 +1,107 @@
+{
+    "android_gradle_plugin_version": "2.2.2",
+    "apk_path": "E:\\androidPro\\MoXingApp\\app\\build\\outputs\\apk\\app-debug.apk",
+    "apt": {
+        
+    },
+    "apt_libraries": {
+        "dagger": false,
+        "butterknife": false
+    },
+    "auto_dependency": true,
+    "build_cache_dir": "E:\\androidPro\\MoXingApp\\app\\build\\freeline",
+    "build_directory": "E:\\androidPro\\MoXingApp\\app\\build",
+    "build_script": "gradlew.bat :app:assembleDebug",
+    "build_script_work_directory": "",
+    "build_tools_directory": "F:\\Android\\build-tools\\24.0.1",
+    "build_tools_version": "24.0.1",
+    "compile_sdk_directory": "F:\\Android\\platforms\\android-23",
+    "compile_sdk_version": "android-23",
+    "databinding": [
+        
+    ],
+    "databinding_compiler_jar": "",
+    "databinding_modules": [
+        
+    ],
+    "debug_package": "com.mtf.moxingapp",
+    "exclude_dep_res_paths": [
+        
+    ],
+    "extra_dep_res_paths": [
+        
+    ],
+    "freeline_cache_dir": "E:\\androidPro\\MoXingApp",
+    "freeline_gradle_plugin_version": "0.8.4",
+    "java_home": "C:\\Program Files\\Java\\jdk1.8.0_73",
+    "launcher": "com.mtf.moxingapp.activity.MainActivity",
+    "main_assets_directory": [
+        "E:\\androidPro\\MoXingApp\\app\\src\\debug\\assets",
+        "E:\\androidPro\\MoXingApp\\app\\src\\main\\assets"
+    ],
+    "main_jniLibs_directory": [
+        "E:\\androidPro\\MoXingApp\\app\\src\\debug\\jniLibs",
+        "E:\\androidPro\\MoXingApp\\app\\src\\main\\jniLibs"
+    ],
+    "main_jni_directory": [
+        "E:\\androidPro\\MoXingApp\\app\\src\\debug\\jni",
+        "E:\\androidPro\\MoXingApp\\app\\src\\main\\jni"
+    ],
+    "main_manifest_path": "E:\\androidPro\\MoXingApp\\app\\src\\main\\AndroidManifest.xml",
+    "main_project_dir": "app",
+    "main_project_name": "app",
+    "main_r_path": "E:\\androidPro\\MoXingApp\\app\\build\\generated\\source\\r\\debug\\R.java",
+    "main_res_directory": [
+        "E:\\androidPro\\MoXingApp\\app\\src\\debug\\res",
+        "E:\\androidPro\\MoXingApp\\app\\src\\main\\res"
+    ],
+    "main_src_directory": [
+        "E:\\androidPro\\MoXingApp\\app\\src\\debug\\java",
+        "E:\\androidPro\\MoXingApp\\app\\src\\main\\java"
+    ],
+    "module_dependencies": {
+        "app": [
+            
+        ]
+    },
+    "modules": [
+        {
+            "name": "app",
+            "path": "E:\\androidPro\\MoXingApp\\app"
+        }
+    ],
+    "package": "com.mtf.moxingapp",
+    "product_flavor": "",
+    "project_source_sets": {
+        "app": {
+            "main_assets_directory": [
+                "E:\\androidPro\\MoXingApp\\app\\src\\debug\\assets",
+                "E:\\androidPro\\MoXingApp\\app\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "E:\\androidPro\\MoXingApp\\app\\src\\debug\\jniLibs",
+                "E:\\androidPro\\MoXingApp\\app\\src\\main\\jniLibs"
+            ],
+            "main_jni_directory": [
+                "E:\\androidPro\\MoXingApp\\app\\src\\debug\\jni",
+                "E:\\androidPro\\MoXingApp\\app\\src\\main\\jni"
+            ],
+            "main_manifest_path": "E:\\androidPro\\MoXingApp\\app\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "E:\\androidPro\\MoXingApp\\app\\src\\debug\\res",
+                "E:\\androidPro\\MoXingApp\\app\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "E:\\androidPro\\MoXingApp\\app\\src\\debug\\java",
+                "E:\\androidPro\\MoXingApp\\app\\src\\main\\java"
+            ]
+        }
+    },
+    "project_type": "gradle",
+    "retrolambda": {
+        
+    },
+    "root_dir": "E:\\androidPro\\MoXingApp",
+    "sdk_directory": "F:\\Android",
+    "use_jdk8": true
+}

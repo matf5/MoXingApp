@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/program_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+
+        android:background="@color/colorMain"
+        app:contentInsetStart="0dp"
+        >
+        <ImageView
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:src="@drawable/arrow_back"
+            android:scaleType="center"
+            android:clickable="true"
+            android:background="?@android:attr/selectableItemBackground"
+            android:id="@+id/img_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布行程"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:text="你好"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorMain"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="请制定您的计划"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_gray"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:id="@+id/layout_plan"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_colorize_light_blue_900_18dp"
+                android:id="@+id/img_plan"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="我的计划"
+                android:layout_toRightOf="@+id/img_plan"
+                android:gravity="center_vertical"
+                android:id="@+id/tv_plan_hint"
+                android:textColor="@color/colorMain"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:text="计划"
+                android:layout_toRightOf="@+id/tv_plan_hint"
+                android:layout_toLeftOf="@+id/next_plan"
+                android:gravity="center_vertical|end"
+
+                android:id="@+id/tv_plan"/>
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_navigate_next_black_18dp"
+                android:id="@+id/next_plan"
+
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:id="@+id/layout_start_time"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_access_time_light_blue_900_18dp"
+                android:id="@+id/img_start_time"
+            />
+            <TextView
+
+                android:text="出发日期"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/img_start_time"
+                android:id="@+id/tv_start_time_hint"
+                android:textColor="@color/colorMain"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+
+                android:layout_toRightOf="@+id/tv_start_time_hint"
+                android:layout_toLeftOf="@+id/next_start_time"
+                android:gravity="center_vertical|end"
+
+                android:id="@+id/tv_start_time"/>
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_navigate_next_black_18dp"
+                android:id="@+id/next_start_time"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:id="@+id/layout_end_time"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+
+                android:id="@+id/img_end_time"
+                />
+            <TextView
+
+                android:text="结束日期"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/img_end_time"
+                android:id="@+id/tv_end_time_hint"
+                android:textColor="@color/colorMain"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_toLeftOf="@+id/end_time_next"
+                android:gravity="center_vertical|end"
+                android:id="@+id/tv_end_time"
+                android:layout_toRightOf="@+id/tv_end_time_hint"/>
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_navigate_next_black_18dp"
+                android:id="@+id/end_time_next"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:id="@+id/layout_start_pos"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_location_searching_light_blue_900_18dp"
+                android:id="@+id/img_pos"
+                />
+            <TextView
+
+                android:text="出发地点"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/img_pos"
+                android:id="@+id/tv_start_pos_hint"
+                android:textColor="@color/colorMain"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/tv_start_pos"
+                android:layout_toLeftOf="@+id/start_pos_next"
+                android:gravity="center_vertical|end"
+                android:layout_toRightOf="@+id/tv_start_pos_hint"/>
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_navigate_next_black_18dp"
+                android:id="@+id/start_pos_next"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:id="@+id/layout_end_pos"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+
+                android:id="@+id/img_end_pos"
+                />
+            <TextView
+
+                android:text="目的地点"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/img_end_pos"
+                android:id="@+id/tv_end_pos_hint"
+                android:textColor="@color/colorMain"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/tv_end_pos"
+                android:layout_toLeftOf="@+id/end_pos_next"
+                android:layout_toRightOf="@+id/tv_end_pos_hint"
+                android:gravity="center_vertical|end"/>
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_navigate_next_black_18dp"
+                android:id="@+id/end_pos_next"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:id="@+id/layout_location"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_location_on_light_blue_900_18dp"
+                android:id="@+id/img_location"
+                />
+            <TextView
+
+                android:text="定位"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/img_location"
+                android:id="@+id/tv_location_hint"
+                android:textColor="@color/colorMain"
+
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/tv_location"
+                android:layout_toLeftOf="@+id/location_next"
+                android:gravity="center_vertical|end"
+                android:layout_toRightOf="@+id/tv_location_hint"/>
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_navigate_next_black_18dp"
+                android:id="@+id/location_next"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:id="@+id/layout_description"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_receipt_grey_600_18dp"
+                android:id="@+id/img_description"
+                />
+            <TextView
+
+                android:text="计划描述"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/img_description"
+                android:textColor="@color/colorMain"
+                android:id="@+id/tv_description_hint"
+
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_toLeftOf="@+id/description_next"
+                android:layout_toRightOf="@+id/tv_description_hint"
+                android:id="@+id/tv_description"
+
+                android:gravity="center_vertical|end"/>
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_navigate_next_black_18dp"
+                android:id="@+id/description_next"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+
+
+
+            android:src="@drawable/ic_add_white_48dp"
+
+
+            />
+    </LinearLayout>
+</LinearLayout>
