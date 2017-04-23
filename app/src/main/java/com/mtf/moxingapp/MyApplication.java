@@ -17,6 +17,8 @@ import com.lzy.okgo.OkGo;
 import java.util.List;
 import java.util.logging.Level;
 
+import cn.smssdk.SMSSDK;
+
 /**
  * Created by Administrator on 2016/12/6.
  */
@@ -35,7 +37,6 @@ public class MyApplication extends Application {
                 .debug("OkGo", Level.INFO, true);
         locationService = new LocationService(getApplicationContext());
         mVibrator =(Vibrator)getApplicationContext().getSystemService(Service.VIBRATOR_SERVICE);
-        SDKInitializer.initialize(getApplicationContext());
 
     }
 

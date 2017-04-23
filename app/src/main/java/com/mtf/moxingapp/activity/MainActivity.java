@@ -28,6 +28,7 @@ import com.mtf.moxingapp.R;
 import com.mtf.moxingapp.adapter.ViewPagerAdapter;
 import com.mtf.moxingapp.fragment.ChatFragment;
 import com.mtf.moxingapp.fragment.TravelListFragment;
+import com.mtf.moxingapp.util.MoXingData;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -155,10 +156,11 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
             sb.append("\nlatitude : ");
             sb.append(location.getLatitude());    //获取纬度信息
+            MoXingData.latitude = location.getLatitude();
 
             sb.append("\nlontitude : ");
             sb.append(location.getLongitude());    //获取经度信息
-
+            MoXingData.longtitude = location.getLongitude();
             sb.append("\nradius : ");
             sb.append(location.getRadius());    //获取定位精准度
 

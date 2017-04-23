@@ -6,7 +6,7 @@ package com.mtf.moxingapp.model;
 import java.util.Date;
 
 public class UserInfo {
-    private int id;
+    private String id;
 
     private String phoneNum;
 
@@ -26,7 +26,7 @@ public class UserInfo {
 
     private Date cdate;
 
-    public UserInfo(int userId) {
+    public UserInfo(String userId) {
         this.userId = userId;
     }
 
@@ -48,7 +48,7 @@ public class UserInfo {
 
     private Date mdate;
 
-    private int userId;
+    private String userId;
 
     public Date getMdate() {
         return mdate;
@@ -62,19 +62,19 @@ public class UserInfo {
         this.cdate = cdate;
     }
 
-    public int getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
